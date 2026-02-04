@@ -3,13 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoodHear Medical Consultants Hospital</title>
+  <link rel="stylesheet" href="/style.css">
+  <title>GoodHeart Medical Consultants Hospital</title>
 </head>
 <body>
-  <div class="info-bar"></div>
-  <nav>
-    <div class="nav__content-wrapper"></div>
+  <div class="info-bar">
+    <div class="content-wrapper">
+      <div class="flex" id="info-bar__address">
+        <svg class="icon icon--small icon--red">
+          <use xlink:href="/assets/vectors/icons.svg#location-pin"></use>
+        </svg>
+        <p>35 Evo Road, GRA Phase 2, Port Harcourt Rivers State, Nigeria</p>
+      </div>
+      <div class="flex" id="info-bar__contact">
+        <div class="flex">
+          <svg class="icon icon--small icon--red">
+            <use xlink:href="/assets/vectors/icons.svg#emergency"></use>
+          </svg>
+          <p>+234 (0) 708 662 0361</p>
+        </div>
+        <div class="flex">
+          <svg class="icon icon--small icon--red">
+            <use xlink:href="/assets/vectors/icons.svg#ambulance"></use>
+          </svg>
+          <p>+234 (0) 903 919 8089 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="nav__top">
+    <div class="content-wrapper">
+      <a href="/" class="nav__logo-link">
+        <svg class="brand-logo--main">
+          <use xlink:href="/assets/vectors/logos.svg#logo-main"></use>
+        </svg>
+      </a>
+      <button class="icon-button icon-button--menutoggle" aria-label="Toggle Menu" aria-expanded="false">
+        <svg class="icon" id="collapsed">
+          <use xlink:href="/assets/vectors/icons.svg#burger-menu"></use>
+        </svg>
+        <svg class="icon" id="expanded">
+          <use xlink:href="/assets/vectors/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="nav__links">
+        <ul class="content-wrapper">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <button class="button button--secondary button--small">Book an Appointment</button>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <main></main>
+  <main>
+    <section class="section section--hero">
+      <div class="content-wrapper">
+        <div class="left-content">
+          <h1 class="heading heading--title heading--all-caps">Your Health in Good Hands</h1>
+          <p class="copy copy--large">Welcome to Good Heart Medical Consultants Hospital. A top hospital in Nigeria, offering world-class, multispecialty care in the heart of Port Harcourt.</p>
+          <button class="button button--primary button--medium">Book an Appointment</button>
+          <div class="flex">
+            <div class="hero__stat-card">
+              <h5 class="heading heading--xs">10k+</h5>
+              <p class="copy copy--small">Happy Patients</p>
+            </div>
+            <div class="hero__stat-card">
+              <h5 class="heading heading--xs">20+</h5>
+              <p class="copy copy--small">Medical Professionals & Consultants</p>
+            </div>
+            <div class="hero__stat-card">
+              <h5 class="heading heading--xs">10 mins</h5>
+              <p class="copy copy--small">Average Waiting Time</p>
+            </div>
+            <div class="hero__stat-card">
+              <h5 class="heading heading--xs">13</h5>
+              <p class="copy copy--small">Medical Departments</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="/assets/images/hero-image.webp" alt="Hero Image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="partners">
+      <div class="content-wrapper">
+        <p class="copy copy--large">Strategic Partners</p>
+        <div class="flex partners__logos">
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#nnpc"></use>
+          </svg>
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#zenith"></use>
+          </svg>
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#rotary"></use>
+          </svg>
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#mobil"></use>
+          </svg>
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#medbury"></use>
+          </svg>
+          <svg class="partner__logo">
+            <use xlink:href="/assets/vectors/client-logos.svg#international-sos"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
